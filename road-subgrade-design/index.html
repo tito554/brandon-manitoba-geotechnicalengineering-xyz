@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#556B2F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Q&A</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>How deep should boreholes go for road subgrade design in Brandon Manitoba?</summary><p>We recommend a minimum depth of 3 m below the proposed subgrade elevation, or until 1.5 m of competent till is encountered. For sites with organic soils or high water table near the Assiniboine River, deeper borings (4–5 m) may be needed to capture the full weak layer profile.</p></details><details><summary>What is the typical cost range for a subgrade investigation in Brandon Manitoba?</summary><p>A standard investigation covering 300–500 m of road alignment, including drilling, SPT, lab tests, and a design report, ranges from CA$1,390 to CA$3,860. The final cost depends on borehole spacing, depth, and number of laboratory tests required.</p></details><details><summary>Can subgrade design address frost heave in Brandon Manitoba's clay till?</summary><p>Yes. The design incorporates frost-susceptibility classification (NRCC method), drainage measures, and subgrade insulation or replacement of the top 0.5–1 m with non-frost-susceptible granular material. Laboratory swell-consolidation tests on undisturbed samples are used to calibrate the heave model.</p></details></div></section>
+<details><summary>How deep should boreholes go for road subgrade design in Brandon Manitoba?</summary><p>We recommend a minimum depth of 3 m below the proposed subgrade elevation, or until 1.5 m of competent till is encountered. For sites with organic soils or high water table near the Assiniboine River, deeper borings (4–5 m) may be needed to capture the full weak layer profile.</p></details><details><summary>What is the typical cost range for a subgrade investigation in Brandon Manitoba?</summary><p>A standard investigation covering 300–500 m of road alignment, including drilling, SPT, lab tests, and a design report, ranges from CA$1,390 to CA$3,860. The final cost depends on borehole spacing, depth, and number of <a href="/laboratory/">laboratory</a> tests required.</p></details><details><summary>Can subgrade design address frost heave in Brandon Manitoba's clay till?</summary><p>Yes. The design incorporates frost-susceptibility classification (NRCC method), drainage measures, and subgrade insulation or replacement of the top 0.5–1 m with non-frost-susceptible granular material. Laboratory swell-consolidation tests on undisturbed samples are used to calibrate the heave model.</p></details></div></section>
 
 
 

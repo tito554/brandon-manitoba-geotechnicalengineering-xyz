@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#556B2F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Q&A</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>What does the SPT measure in Brandon Manitoba soils?</summary><p>The Standard Penetration Test measures the resistance of soil to dynamic penetration. In Brandon Manitoba, the N-value (blow count) indicates the relative density of granular soils and the consistency of cohesive soils. For the local glacial till, N-values typically range from 8 to 50, with higher values near the surface where the clay crust dries and stiffens.</p></details><details><summary>How much does an SPT cost in Brandon Manitoba?</summary><p>The typical cost for a Standard Penetration Test in Brandon Manitoba ranges from CA$630 to CA$910 per borehole, depending on depth, number of test intervals, and access conditions. This includes mobilization, drilling, sampling, and a preliminary log. Additional laboratory tests on retrieved samples are billed separately.</p></details><details><summary>What corrections are applied to SPT data in this region?</summary><p>Corrections follow CSA A23.2-9A / CSA A23.2-9A / CSA A23.2-9A / CSA A23.2-9A / CSA A23.2-9A / ASTM D1586 guidelines. For Brandon Manitoba conditions, the main adjustments are hammer energy ratio (CE), rod length correction (CR), and borehole diameter correction (CB). Overburden pressure correction (CN) is applied for liquefaction studies. The team also applies a fines content correction when the split-spoon sample contains more than 5% passing the No. 200 sieve, which is common in the silty till layers.</p></details></div></section>
+<details><summary>What does the SPT measure in Brandon Manitoba soils?</summary><p>The Standard Penetration Test measures the resistance of soil to dynamic penetration. In Brandon Manitoba, the N-value (blow count) indicates the relative density of granular soils and the consistency of cohesive soils. For the local glacial till, N-values typically range from 8 to 50, with higher values near the surface where the clay crust dries and stiffens.</p></details><details><summary>How much does an SPT cost in Brandon Manitoba?</summary><p>The typical cost for a Standard Penetration Test in Brandon Manitoba ranges from CA$630 to CA$910 per borehole, depending on depth, number of test intervals, and access conditions. This includes mobilization, drilling, sampling, and a preliminary log. Additional <a href="/laboratory/">laboratory</a> tests on retrieved samples are billed separately.</p></details><details><summary>What corrections are applied to SPT data in this region?</summary><p>Corrections follow CSA A23.2-9A / CSA A23.2-9A / CSA A23.2-9A / CSA A23.2-9A / CSA A23.2-9A / ASTM D1586 guidelines. For Brandon Manitoba conditions, the main adjustments are hammer energy ratio (CE), rod length correction (CR), and borehole diameter correction (CB). Overburden pressure correction (CN) is applied for liquefaction studies. The team also applies a fines content correction when the split-spoon sample contains more than 5% passing the No. 200 sieve, which is common in the silty till layers.</p></details></div></section>
 
 
 
